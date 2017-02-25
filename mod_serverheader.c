@@ -31,17 +31,21 @@ static const char * server_header(cmd_parms *cmd, void *xxx, const char *arg)
 
 static int hook_post_config(apr_pool_t *p, apr_pool_t *plog, apr_pool_t *ptemp, server_rec *s)
 {
-  const char * banner = ap_get_server_banner();
+  char * banner = ap_get_server_banner();
+  int banner_len = strlen(banner);
   server_header_config *config = ap_get_module_config(s->module_config, &server_header_module);
+  int new_banner_len;
 
   if (config->new_server_header == NULL) {
     ap_log_error(APLOG_MARK, APLOG_INFO, 0, s, "No custom server header or banner configured.");
     return DECLINED;
   }
   
+  new_banner_len = strlen(config->new_server_header);
+  
   // Make sure banner is long enough to store our new contents.
-  if (strlen(banner) < strlen(config->new_server_header)) {
-    ap_log_error(APLOG_MARK, APLOG_CRIT, 0, s, "ServerHeader directive (\"%s\") is too long. Please set ServerTokens to Full or limit your ServerHeader length to %d. [old: %d, new: %d]", config->new_server_header, strlen(banner), strlen(config->new_server_header));
+  if (banner_len < new_banner_len) {
+    ap_log_error(APLOG_MARK, APLOG_CRIT, 0, s, "ServerHeader directive (\"%s\") is too long. Please set ServerTokens to Full or limit your ServerHeader length to %d. [old: %d, new: %d]", config->new_server_header, banner_len, new_banner_len);
     return DONE;
   } else {
     strcpy(banner, config->new_server_header);
