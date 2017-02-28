@@ -24,6 +24,11 @@ typedef struct {
 
 static const char * server_header(cmd_parms *cmd, void *xxx, const char *arg)
 {
+    const char *err = ap_check_cmd_context(cmd, GLOBAL_ONLY);
+    if (err != NULL) {
+      return err;
+    }
+
     server_header_config *config = ap_get_module_config(cmd->server->module_config, &server_header_module);
     config->new_server_header = arg;
     return NULL;
