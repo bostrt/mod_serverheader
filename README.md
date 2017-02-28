@@ -39,7 +39,7 @@ Content-Type: text/html; charset=iso-8859-1
 
 > Revealing the specific software version of the server may allow the server machine to become more vulnerable to attacks against software that is known to contain security holes. Implementers SHOULD make the Server header field a configurable option.
 
-*vs. *
+*vs.*
 
 [Apache HTTPD ServerTokens Directive](http://httpd.apache.org/docs/current/mod/core.html#servertokens)
 > Setting ServerTokens to less than minimal is not recommended because it makes it more difficult to debug interoperational problems. Also note that disabling the Server: header does nothing at all to make your server more secure. The idea of "security through obscurity" is a myth and leads to a false sense of safety.
