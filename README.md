@@ -8,7 +8,7 @@
 
 -----------
 
-This directive allows you to override Apache HTTPD's `Server` respones header. In addition to configuring this directive, you may also need to modify your [`ServerTokens`](https://httpd.apache.org/docs/2.4/mod/core.html#servertokens) directive to allow for a longer value to be used.
+This directive allows you to override Apache HTTPD's `Server` response header. In addition to configuring this directive, you may also need to modify your [`ServerTokens`](https://httpd.apache.org/docs/2.4/mod/core.html#servertokens) directive to allow for a longer value to be used.
 
 #### Example Usage:
 ```
