@@ -6,7 +6,7 @@
  * You may use, distribute and modify this code under the
  * terms of the Apache License Version 2.0.
  * 
- * You should have received a copy of the Apache LcieseXYZApache License Version
+ * You should have received a copy of the Apache License Version
  * 2.0 license with this file. If not, please write to: 
  * bostrt at gmail dot com, or visit: 
  * http://www.apache.org/licenses/LICENSE-2.0.html
