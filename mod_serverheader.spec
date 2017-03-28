@@ -1,7 +1,7 @@
 Summary:	   Provides Apache HTTPD directive allowing you to override Apache HTTPD's "Server" response header.
 Name:        mod_serverheader
 Version:     1.0
-Release:     1
+Release:     2
 License:     ASL 2.0
 Url:         https://github.com/bostrt/mod_serverheader
 
