@@ -10,7 +10,7 @@
 ```
 #### RHEL users
 More to come after <https://bugzilla.redhat.com/show_bug.cgi?id=1429831> is completed.
-For now, drop in the YUM repo file into your `/etc/yum/repos.d/`. Here's the repo file for [RHEL 7](https://copr.fedorainfracloud.org/coprs/bostrt/mod_serverheader/repo/epel-7/bostrt-mod_serverheader-epel-7.repo) and here's the repo file for [RHEL 6](https://copr.fedorainfracloud.org/coprs/bostrt/mod_serverheader/repo/epel-6/bostrt-mod_serverheader-epel-6.repo)
+For now, drop in the YUM repo file into your `/etc/yum/repos.d/`. Here's the repo file for [RHEL 7](https://copr.fedorainfracloud.org/coprs/bostrt/mod_serverheader/repo/epel-7/bostrt-mod_serverheader-epel-7.repo).
 
 
 ## Configuration
