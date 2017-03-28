@@ -1,5 +1,22 @@
 # mod_serverheader
 <a href="https://copr.fedorainfracloud.org/coprs/bostrt/mod_serverheader/package/mod_serverheader/"><img src="https://copr.fedorainfracloud.org/coprs/bostrt/mod_serverheader/package/mod_serverheader/status_image/last_build.png" /></a>
+
+## Installation
+
+#### Fedora users
+```
+# dnf copr enable bostrt/mod_serverheader
+# dnf install mod_serverheader
+```
+#### RHEL users
+More to come after <https://bugzilla.redhat.com/show_bug.cgi?id=1429831> is completed.
+For now, drop in the YUM repo file into your `/etc/yum/repos.d/`. Here's the repo file for [RHEL 7](https://copr.fedorainfracloud.org/coprs/bostrt/mod_serverheader/repo/epel-7/bostrt-mod_serverheader-epel-7.repo) and here's the repo file for [RHEL 6](https://copr.fedorainfracloud.org/coprs/bostrt/mod_serverheader/repo/epel-6/bostrt-mod_serverheader-epel-6.repo)
+
+
+## Configuration
+
+`/etc/httpd/conf.d/mod_serverheader.conf`
+
 ## ServerHeader Directive 
 
 [Description](https://httpd.apache.org/docs/2.4/mod/directive-dict.html#Description): Modify Server header contents  
@@ -34,7 +51,7 @@ Content-Type: text/html; charset=iso-8859-1
 # cd mod_serverheader
 # apxs -i -a -c mod_serverheader.c
 ```
+
 ## Motivation
 
 https://bostrt.github.io/project/Introducing-mod_serverheader/
-
