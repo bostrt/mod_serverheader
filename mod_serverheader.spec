@@ -34,8 +34,8 @@ install -Dp -m0644 %{SOURCE2} $RPM_BUILD_ROOT%{_sysconfdir}/httpd/conf.modules.d
 %files
 %defattr(-,root,root)
 %{_libdir}/httpd/modules/mod_serverheader.so
-%config(noreplace) %{_sysconfdif}/httpd/conf.d/mod_serverheader.conf
-%config(noreplace) %{_sysconfdif}/httpd/conf.modules.d/00-serverheader.conf
+%config(noreplace) %{_sysconfdir}/httpd/conf.d/mod_serverheader.conf
+%config(noreplace) %{_sysconfdir}/httpd/conf.modules.d/00-serverheader.conf
 %doc README.md
 
 %changelog
