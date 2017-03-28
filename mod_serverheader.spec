@@ -39,3 +39,6 @@ install -Dp -m0644 %{SOURCE2} $RPM_BUILD_ROOT%{_sysconfdir}/httpd/conf.modules.d
 %doc README.md
 
 %changelog
+* Mon Mar 27 2017 Robert Bost 1.1-1
+- new package built with tito
+
