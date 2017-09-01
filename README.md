@@ -54,4 +54,4 @@ Content-Type: text/html; charset=iso-8859-1
 
 ## Motivation
 
-https://bostrt.github.io/project/Introducing-mod_serverheader/
+https://robertbost.wordpress.com/2017/03/19/introducing-mod_serverheader/
