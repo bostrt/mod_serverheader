@@ -9,8 +9,14 @@
 # dnf install mod_serverheader
 ```
 #### RHEL users
-More to come after <https://bugzilla.redhat.com/show_bug.cgi?id=1429831> is completed.
-For now, drop in the YUM repo file into your `/etc/yum/repos.d/`. Here's the repo file for [RHEL 7](https://copr.fedorainfracloud.org/coprs/bostrt/mod_serverheader/repo/epel-7/bostrt-mod_serverheader-epel-7.repo).
+The `copr` plugin is now available for RHEL in Optional repos:
+```
+# yum install yum-plugin-copr
+# yum copr enable bostrt/mod_serverheader
+# yum install mod_serverheader
+```
+#### RHEL alternative
+Drop YUM repo file into your `/etc/yum/repos.d/`. Here's the repo file for [RHEL 7](https://copr.fedorainfracloud.org/coprs/bostrt/mod_serverheader/repo/epel-7/bostrt-mod_serverheader-epel-7.repo).
 
 
 ## Configuration
