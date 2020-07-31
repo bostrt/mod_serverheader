@@ -1,7 +1,7 @@
 Summary:	   Provides Apache HTTPD directive allowing you to override Apache HTTPD's "Server" response header.
 Name:        mod_serverheader
 Version:     1.0.5
-Release:     1
+Release:     2
 License:     ASL 2.0
 Url:         https://github.com/bostrt/mod_serverheader
 
@@ -10,6 +10,7 @@ Source1:   mod_serverheader.conf
 Source2:   00-serverheader.conf
 
 BuildRequires: httpd-devel
+BuildRequires: gcc
 
 Requires: httpd
 
@@ -39,6 +40,8 @@ install -Dp -m0644 %{SOURCE2} $RPM_BUILD_ROOT%{_sysconfdir}/httpd/conf.modules.d
 %doc README.md
 
 %changelog
+* Fri Jul 21 2020 Robert Bost 1.0.5-2
+- BuildRequires gcc (fix RPM build on Fedora)
 * Thu Jul 30 2020 Robert Bost 1.0.5-1
 - Fix RPM versioning
 * Mon Mar 27 2017 Robert Bost 1.0-2
